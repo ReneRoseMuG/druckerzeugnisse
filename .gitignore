@@ -1,0 +1,9 @@
+# Generierte Nachweis-/Hilfsdateien (nicht Teil der Broschüre)
+test-vorbereitung.pdf
+
+# Open Design App-Maschinerie
+.od-skills/
+
+# OS
+Thumbs.db
+.DS_Store
