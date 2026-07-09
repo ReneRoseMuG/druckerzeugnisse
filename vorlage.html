@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEITENTITEL — Produktbroschüre · Fasssauna.de</title>
+<title>SEITENTITEL — Vorabinformationen · Fasssauna.de</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/broschuere.css">
@@ -11,10 +11,11 @@
 <body>
   <div class="sheet">
 
-    <!-- Kopf: Wortmarke links, Themenkennung rechts (pro Seite anpassen). -->
+    <!-- Kopf: Einordnung links, Logo zentral, Themenkennung rechts (pro Seite anpassen). -->
     <header class="doc-head">
-      <div class="wordmark">FASSSAUNA<span>.DE</span></div>
-      <div class="doc-tag">Produktbroschüre · THEMA</div>
+      <div class="doc-kicker"><span>Vorabinformationen</span><span>Pflegehinweise</span></div>
+      <img class="brand-logo" src="bilder/sauna-logo.png" alt="Fasssauna.de">
+      <div class="doc-tag"><span>Aufbauvorbereitung</span><span>Stromversorgung</span></div>
     </header>
 
     <!-- Titelblock: zentrierte Headline, darunter der zentrierte Lead-Container. -->
@@ -43,11 +44,10 @@
       <!-- weitere <figure> nach Bedarf -->
     </div>
 
-    <!-- Fuß: Firmierung rechts. -->
-    <footer class="doc-foot">
-      <span class="brand">Meisel &amp; Gerken GmbH</span>
-    </footer>
+    <!-- Fuß: einheitliches Impressum. Inhalt kommt zentral aus js/broschuere.js. -->
+    <footer class="doc-foot" data-imprint></footer>
 
   </div>
+  <script src="js/broschuere.js"></script>
 </body>
 </html>

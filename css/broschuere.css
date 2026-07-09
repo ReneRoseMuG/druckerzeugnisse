@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap');
 
 /* ============================================================
-   Produktbroschüre Fasssauna.de — gemeinsame Druckstile (A4 hoch)
+   Vorabinformationen Fasssauna.de — gemeinsame Druckstile (A4 hoch)
    Eigenständiges Projekt, unabhängig von der Website (site.css).
    Markenwelt: dunkel #1C1D2C · Holz #ae926c · Serifen-Display
-   Jede Broschürenseite bindet nur diese eine Datei ein.
+   Jede Informationsseite bindet nur diese eine Datei ein.
    ============================================================ */
 :root{
   --ink:#1C1D2C; --ink-soft:#3b3c49; --muted:#6f6a60;
@@ -39,27 +39,28 @@ body{
 
 /* ── Kopf ─────────────────────────────────────────────── */
 .doc-head{
-  display:flex;align-items:baseline;justify-content:space-between;
-  padding-bottom:9px;border-bottom:1.5px solid var(--wood);
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:12mm;
+  padding-bottom:8px;border-bottom:1.5px solid var(--wood);
 }
-.wordmark{
-  font-family:var(--display);font-weight:600;font-size:19px;
-  letter-spacing:.02em;color:var(--ink);
+.brand-logo{
+  display:block;width:44mm;max-width:100%;height:auto;
 }
-.wordmark span{color:var(--wood-deep)}
-.doc-tag{
+.doc-kicker,.doc-tag{
+  display:flex;flex-direction:column;gap:3px;
   font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;
   text-transform:uppercase;color:var(--wood-dark);
 }
+.doc-kicker{text-align:left}
+.doc-tag{text-align:right;align-items:flex-end}
+.doc-kicker{align-items:flex-start}
+
+@media (max-width: 720px){
+  .doc-head{grid-template-columns:1fr;justify-items:center;gap:6px}
+  .doc-kicker,.doc-tag{text-align:center;align-items:center}
+}
 
 /* ── Titelblock ──────────────────────────────────────── */
-.lead-block{margin-top:12mm}
-.eyebrow{
-  margin:0;font-family:var(--mono);font-size:11px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--wood-deep);
-  display:flex;align-items:center;gap:12px;
-}
-.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--wood);flex:none}
+.lead-block{margin-top:8mm}
 h1{
   margin:0;font-family:var(--display);font-weight:600;
   font-size:40px;line-height:1.1;letter-spacing:.01em;color:var(--ink);
@@ -67,12 +68,12 @@ h1{
 }
 .lead{
   margin:22px auto 0;font-size:13px;line-height:1.62;color:var(--ink-soft);
-  max-width:58ch;text-align:left;
+  width:100%;max-width:132mm;text-align:justify;hyphens:auto;
 }
 
 /* ── Voraussetzung / Textblock (volle Breite) ────────── */
-.reqs{margin-top:15mm}
-.req{padding-left:14px;border-left:2px solid var(--wood);}
+.reqs{margin-top:9mm}
+.req{padding-left:0;border-left:none;}
 .req h3{
   margin:0;font-family:var(--display);font-weight:600;font-size:16px;color:var(--ink);
 }
@@ -87,12 +88,12 @@ h1{
 .group-label::after{content:"";flex:1;height:1px;background:var(--line)}
 
 .photo-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:5mm 7mm;
-  margin-top:7mm;
+  display:grid;grid-template-columns:1fr 1fr;gap:4mm 7mm;
+  margin-top:5mm;
 }
 figure{margin:0}
 figure .frame{
-  display:block;width:100%;aspect-ratio:4/3;overflow:hidden;
+  display:block;width:100%;aspect-ratio:3/2;overflow:hidden;
   border:1px solid var(--line);background:var(--paper-warm);
 }
 figure img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
@@ -101,14 +102,56 @@ figcaption{
   text-transform:uppercase;color:var(--muted);
 }
 
-/* ── Fuß ─────────────────────────────────────────────── */
-.doc-foot{
-  margin-top:auto;padding-top:9px;border-top:1px solid var(--line);
-  display:flex;align-items:center;justify-content:flex-end;gap:16px;
-  font-size:10px;color:var(--muted);
+/* ── Deckblatt / Titelseite ──────────────────────────── */
+.cover{margin-top:22mm}
+.cover-title{
+  margin:0;font-family:var(--display);font-weight:600;
+  font-size:50px;line-height:1.08;letter-spacing:.01em;color:var(--ink);
 }
-.doc-foot .plan{color:var(--wood-dark);max-width:62ch;line-height:1.5}
-.doc-foot .brand{font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+/* Kleiner Begleittext: gleiche Breite wie die Seitenauflistung. */
+.cover-sub{margin:18px auto 0;font-size:13.5px;line-height:1.62;color:var(--ink-soft);width:100%;max-width:132mm;text-align:justify;hyphens:auto}
+
+.toc{margin:16mm auto 0;width:100%;max-width:132mm}
+.toc-item{
+  display:grid;grid-template-columns:34px 1fr auto;align-items:baseline;gap:16px;
+  padding:13px 4px;border-top:1px solid var(--line);
+}
+.toc-item:last-child{border-bottom:1px solid var(--line)}
+.toc-idx{font-family:var(--mono);font-size:11px;color:var(--wood-deep)}
+.toc-name{font-family:var(--display);font-weight:600;font-size:18px;color:var(--ink)}
+.toc-name small{display:block;font-family:var(--body);font-weight:400;font-size:10.5px;color:var(--muted);margin-top:2px}
+.toc-page{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* ── Skizze / Schema ─────────────────────────────────── */
+.sketch{
+  margin-top:12mm;border:1px solid var(--line);background:var(--paper-warm);
+  padding:11mm 8mm;display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.sketch svg{width:100%;max-width:150mm;height:auto}
+.sketch-cap{
+  width:100%;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);text-align:left;
+}
+
+/* ── Platzhalter für noch fehlenden Text ─────────────── */
+.stub{
+  margin-top:6px;border:1px dashed var(--wood);border-radius:2px;padding:10px 13px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.03em;line-height:1.6;
+  color:var(--wood-dark);background:var(--paper-warm);
+}
+
+/* ── Fuß: einheitliches Impressum (4 Spalten + Rechtszeile) ── */
+.doc-foot{margin-top:auto;padding-top:5mm}
+.imprint{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
+.imp-col{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.imp-ico{width:20px;height:20px;color:var(--green);flex:none}
+.imp-box{
+  width:100%;flex:1 1 auto;min-height:46px;border:1px solid var(--line);border-radius:2px;
+  padding:7px 7px;display:flex;flex-direction:column;justify-content:center;gap:1px;
+}
+.imp-box span{font-size:8.4px;line-height:1.5;color:var(--ink-soft);word-break:break-word}
+.imp-box .imp-strong{font-weight:600;color:var(--ink)}
+.imp-legal{margin:7px 0 0;font-size:8px;line-height:1.45;color:var(--muted);text-align:center}
 
 /* ── Print ───────────────────────────────────────────── */
 @page{size:A4 portrait;margin:0}

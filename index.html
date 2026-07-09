@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Produktbroschüre · Fasssauna.de — Übersicht</title>
+<title>Vorabinformationen · Fasssauna.de — Übersicht</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/broschuere.css">
@@ -12,10 +12,15 @@
   body{display:block;padding:48px 24px}
   .wrap{max-width:640px;margin:0 auto}
   .head{border-bottom:1.5px solid var(--wood);padding-bottom:12px;margin-bottom:28px;
-    display:flex;align-items:baseline;justify-content:space-between}
-  .head .mark{font-family:var(--display);font-weight:600;font-size:22px}
-  .head .mark span{color:var(--wood-deep)}
-  .head .tag{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--wood-dark)}
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:28px}
+  .head .brand-logo{width:170px;height:auto}
+  .head .tag{display:flex;flex-direction:column;gap:3px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--wood-dark)}
+  .head .tag:first-child{text-align:left}
+  .head .tag:last-child{text-align:right;align-items:flex-end}
+  @media (max-width:720px){
+    .head{grid-template-columns:1fr;justify-items:center;gap:8px}
+    .head .tag{text-align:center!important;align-items:center!important}
+  }
   h1{font-family:var(--display);font-size:30px;text-align:left;margin:0 0 6px}
   .intro{font-size:14px;color:var(--ink-soft);line-height:1.6;margin:0 0 28px;max-width:56ch}
   ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
@@ -33,16 +38,18 @@
 <body>
   <div class="wrap">
     <div class="head">
-      <div class="mark">FASSSAUNA<span>.DE</span></div>
-      <div class="tag">Produktbroschüre</div>
+      <div class="tag"><span>Vorabinformationen</span><span>Pflegehinweise</span></div>
+      <img class="brand-logo" src="bilder/sauna-logo.png" alt="Fasssauna.de">
+      <div class="tag"><span>Aufbauvorbereitung</span><span>Stromversorgung</span></div>
     </div>
-    <h1>Broschüre · Übersicht</h1>
-    <p class="intro">Interne Startseite dieses Broschüren-Projekts. Jede Seite ist als eigene druckbare A4-Datei angelegt. Diese Übersicht wird nicht mitgedruckt.</p>
+    <h1>Vorabinformationen · Übersicht</h1>
+    <p class="intro">Interne Startseite dieser Vorabinformationen. Jede Seite ist als eigene druckbare A4-Datei angelegt. Diese Übersicht wird nicht mitgedruckt.</p>
     <ul>
-      <li><a href="vorbereitung.html"><span class="t">Vorbereitungen am Bauplatz</span><span class="n">Seite 01</span></a></li>
-      <li class="todo"><span>Seite 02 · geplant</span></li>
-      <li class="todo"><span>Seite 03 · geplant</span></li>
-      <li class="todo"><span>Seite 04 · geplant</span></li>
+      <li><a href="deckblatt.html" target="_blank" rel="noopener"><span class="t">Deckblatt &amp; Themenübersicht</span><span class="n">Seite 01</span></a></li>
+      <li><a href="vorbereitung.html" target="_blank" rel="noopener"><span class="t">Vorbereitungen am Bauplatz</span><span class="n">Seite 02</span></a></li>
+      <li><a href="fundament-skizze.html" target="_blank" rel="noopener"><span class="t">Fundament · Skizze</span><span class="n">Seite 03</span></a></li>
+      <li><a href="elektroanschluss.html" target="_blank" rel="noopener"><span class="t">Elektroanschluss</span><span class="n">Seite 04</span></a></li>
+      <li><a href="holzschutz.html" target="_blank" rel="noopener"><span class="t">Holzschutz</span><span class="n">Seite 05</span></a></li>
     </ul>
   </div>
 </body>
