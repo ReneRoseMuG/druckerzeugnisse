@@ -8,8 +8,7 @@ druckbare A4-Datei (Hochformat).
 
 ```
 broschuere/
-├── index.html             Interne Übersicht / Launcher (wird nicht gedruckt)
-├── deckblatt.html         Seite 01 · Deckblatt & Themenübersicht
+├── index.html             Seite 01 · Deckblatt & Themenübersicht
 ├── vorbereitung.html      Seite 02 · Vorbereitungen am Bauplatz
 ├── fundament-skizze.html  Seite 03 · Fundament (Schemazeichnung)
 ├── elektroanschluss.html  Seite 04 · Elektroanschluss (Text folgt)
@@ -29,7 +28,7 @@ broschuere/
 1. `vorlage.html` kopieren und sinnvoll benennen (z. B. `lieferung.html`).
 2. Titel, linke Kopf-Kennung (`doc-kicker`), rechte Kopf-Kennung (`doc-tag`), Headline, Texte und Bilder einsetzen.
 3. Bilder nach `bilder/` legen, im 4:3-Format, damit sie randfüllend passen.
-4. Seite in `index.html` in die Liste eintragen.
+4. Seite in der Themenübersicht der `index.html` eintragen.
 
 ## Marke
 
