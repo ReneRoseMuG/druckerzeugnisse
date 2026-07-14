@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap');
-
 /* ============================================================
    Vorabinformationen Fasssauna.de — gemeinsame Druckstile (A4 hoch)
    Eigenständiges Projekt, unabhängig von der Website (site.css).
@@ -11,9 +9,16 @@
   --paper:#ffffff; --paper-warm:#f7f3ec; --paper-deep:#efe8dc;
   --wood:#ae926c; --wood-deep:#8c6a3b; --wood-dark:#745c3a;
   --green:#4f9e45; --line:rgba(28,29,44,.12);
-  --display:"EB Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --display:"Avenir Next","Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
   --body:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  /* Einheitlicher Inhaltsrhythmus; Kopf- und Fußraster bleiben davon unberührt. */
+  --content-top:7mm;
+  --hero-gap:4mm;
+  --section-gap:7mm;
+  --block-gap:5mm;
+  --heading-gap:3mm;
+  --column-gap:7mm;
 }
 *{box-sizing:border-box}
 
@@ -43,12 +48,6 @@ body{
   height:24mm;padding-bottom:8px;border-bottom:1.5px solid var(--wood);
 }
 .page-content{min-height:0;overflow:visible}
-.page-content-compact .lead-block{margin-top:5mm}
-.page-content-compact .info-rows{margin-top:4mm;gap:3mm}
-.page-content-compact .info-row{gap:2mm}
-.page-content-compact .info-note{margin-top:3mm}
-.page-content-compact .advice-row{margin-top:3mm}
-.page-content-compact .photo-grid{margin-top:3mm}
 .brand-logo{
   display:block;width:44mm;max-width:100%;height:auto;
 }
@@ -61,41 +60,42 @@ body{
 .doc-tag{text-align:right;align-items:flex-end}
 .doc-kicker{align-items:flex-start}
 
-@media (max-width: 720px){
-  .doc-head{grid-template-columns:1fr;justify-items:center;gap:6px}
-  .doc-kicker,.doc-tag{text-align:center;align-items:center}
+/* Die Druckseite bleibt auch auf kleinen Bildschirmen ein unverändertes A4-Canvas. */
+@media screen and (max-width:860px){
+  body{align-items:flex-start;overflow-x:auto}
+  .sheet{flex:none}
 }
 
 /* ── Titelblock ──────────────────────────────────────── */
-.lead-block{margin-top:7mm}
+.lead-block{margin-top:var(--content-top)}
 h1{
   margin:0;font-family:var(--display);font-weight:600;
-  font-size:40px;line-height:1.1;letter-spacing:.01em;color:var(--ink);
+  font-size:40px;line-height:1.1;letter-spacing:-.015em;color:var(--ink);
   text-align:center;
 }
 .lead{
-  margin:5mm 0 0;font-size:12.5px;line-height:1.52;color:var(--ink-soft);
+  margin:var(--hero-gap) 0 0;font-size:12.5px;line-height:1.52;color:var(--ink-soft);
   width:100%;text-align:justify;hyphens:auto;
 }
-.lead + .lead{margin-top:3mm}
+.lead + .lead{margin-top:var(--heading-gap)}
 
 /* ── Voraussetzung / Textblock (volle Breite) ────────── */
-.reqs{margin-top:9mm}
+.reqs{margin-top:var(--section-gap)}
 .req{padding-left:0;border-left:none;}
 .req h3{
   margin:0;font-family:var(--display);font-weight:600;font-size:16px;color:var(--ink);
 }
-.req p{margin:6px 0 0;font-size:12px;line-height:1.55;color:var(--ink-soft)}
+.req p{margin:var(--heading-gap) 0 0;font-size:12px;line-height:1.55;color:var(--ink-soft)}
 
-.info-rows{margin:7mm 0 0;width:100%;display:flex;flex-direction:column;gap:5mm}
-.info-row{display:flex;flex-direction:column;gap:3mm}
-.info-row-body{display:grid;grid-template-columns:calc((100% - 8mm)/3) 1fr;gap:7mm;align-items:start}
-.info-row figure .frame{aspect-ratio:4/3}
+.info-rows{margin:var(--section-gap) 0 0;width:100%;display:flex;flex-direction:column;gap:var(--block-gap)}
+.info-row{display:flex;flex-direction:column;gap:var(--heading-gap)}
+.info-row-body{display:grid;grid-template-columns:calc((100% - 8mm)/3) 1fr;gap:var(--column-gap);align-items:start}
+.info-row figure .frame{aspect-ratio:3/2}
 .info-row h3{margin:0;font-family:var(--display);font-weight:600;font-size:17px;color:var(--ink);text-align:center}
 .info-row p{margin:0;font-size:12px;line-height:1.55;color:var(--ink-soft);text-align:justify;hyphens:auto}
-.info-note{margin:5mm 0 0;width:100%}
+.info-note{margin:var(--block-gap) 0 0;width:100%}
 .info-note p{margin:0;font-size:12px;line-height:1.55;color:var(--ink-soft);text-align:justify;hyphens:auto}
-.advice-row{margin-top:5mm}
+.advice-row{margin-top:var(--block-gap)}
 .image-placeholder{background:var(--paper-warm)}
 
 /* ── Bildstrecke ─────────────────────────────────────── */
@@ -107,8 +107,8 @@ h1{
 .group-label::after{content:"";flex:1;height:1px;background:var(--line)}
 
 .photo-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:4mm 7mm;
-  margin-top:5mm;
+  display:grid;grid-template-columns:1fr 1fr;gap:4mm var(--column-gap);
+  margin-top:var(--block-gap);
 }
 .photo-grid-three{grid-template-columns:repeat(3,1fr);gap:4mm}
 figure{margin:0}
@@ -126,7 +126,7 @@ figcaption{
 .cover{margin-top:22mm}
 .cover-title{
   margin:0;font-family:var(--display);font-weight:600;
-  font-size:50px;line-height:1.08;letter-spacing:.01em;color:var(--ink);
+  font-size:50px;line-height:1.08;letter-spacing:-.02em;color:var(--ink);
 }
 /* Kleiner Begleittext: gleiche Breite wie die Seitenauflistung. */
 .cover-sub{margin:18px 0 0;font-size:13.5px;line-height:1.62;color:var(--ink-soft);width:100%;text-align:justify;hyphens:auto}
@@ -138,6 +138,11 @@ figcaption{
   color:inherit;text-decoration:none;
 }
 .toc-item:visited{color:inherit}
+.toc-item:focus-visible{outline:2px solid var(--wood-deep);outline-offset:2px}
+@media screen{
+  .toc-item{transition:background-color 150ms cubic-bezier(.2,0,0,1)}
+  .toc-item:hover{background:var(--paper-warm)}
+}
 .toc-item:last-child{border-bottom:1px solid var(--line)}
 .toc-idx{font-family:var(--mono);font-size:11px;color:var(--wood-deep)}
 .toc-thumb{
@@ -153,7 +158,7 @@ figcaption{
 
 /* ── Skizze / Schema ─────────────────────────────────── */
 .sketch{
-  margin-top:12mm;border:1px solid var(--line);background:var(--paper);
+  margin-top:var(--section-gap);border:1px solid var(--line);background:var(--paper);
   padding:11mm 8mm;display:flex;flex-direction:column;align-items:center;gap:10px;
 }
 .sketch > img{display:block;width:100%;max-width:150mm;height:auto;object-fit:contain}

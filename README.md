@@ -20,19 +20,19 @@ broschuere/
 │   └── broschuere.js      Einheitliche Impressum-Fußzeile (eine Pflegestelle)
 ├── quellen/
 │   └── anschrieben-key-facts-lang.pdf  Quelldokument / Key Facts
-└── bilder/                Bilder der Vorabinformationen (4:3, ca. 1000 × 750 px)
+└── bilder/                Bilder der Vorabinformationen (3:2)
 ```
 
 ## Neue Seite anlegen
 
 1. `vorlage.html` kopieren und sinnvoll benennen (z. B. `lieferung.html`).
 2. Titel, linke Kopf-Kennung (`doc-kicker`), rechte Kopf-Kennung (`doc-tag`), Headline, Texte und Bilder einsetzen.
-3. Bilder nach `bilder/` legen, im 4:3-Format, damit sie randfüllend passen.
+3. Bilder nach `bilder/` legen, im einheitlichen 3:2-Format, damit sie randfüllend passen.
 4. Seite in der Themenübersicht der `index.html` eintragen.
 
 ## Marke
 
-- Dunkel `#1C1D2C`, Holz `#ae926c`, Serifen-Display **EB Garamond**.
+- Dunkel `#1C1D2C`, Holz `#ae926c`, klare serifenlose Display-Schrift.
 - Alle Stile liegen zentral in `css/broschuere.css`. Nichts inline stylen.
 - Die Kopfzeile zeigt links die Einordnung, mittig das Logo und rechts den
   jeweiligen Abschnitt.
@@ -43,13 +43,12 @@ broschuere/
 
 ## Drucken / PDF
 
+- Die zusammengeführte Ausgabedatei heißt verbindlich `Kundenbroschüre.pdf`.
 - Im Browser über Drucken → Ziel „Als PDF speichern".
 - Papierformat A4, Ränder „Keine", Hintergrundgrafiken aktivieren
   (sonst fehlen Holz-Linie und Bildrahmen).
 
-## Schrift offline
+## Schrift
 
-Die Schrift EB Garamond wird aktuell von Google Fonts geladen (Internet nötig).
-Für garantiert identischen Druck ohne Internet kann die Schrift lokal
-eingebettet werden (Font-Dateien in `css/` ablegen und `@import` in
-`broschuere.css` durch `@font-face` ersetzen).
+Die Broschüre verwendet eine serifenlose Systemschrift mit passenden lokalen
+Fallbacks. Für den Druck ist deshalb keine externe Schriftdatei erforderlich.

@@ -127,6 +127,20 @@
       "kind": "html",
       "contentPath": "0009-644d49fe-b5a8-43ee-8732-d70e0461649b.html",
       "promptSource": "message"
+    },
+    {
+      "id": "94bd449b-486a-4eae-904e-19ca68fe2386",
+      "fileName": "index.html",
+      "version": 10,
+      "label": "Version 10",
+      "createdAt": 1784032128045,
+      "source": "ai",
+      "prompt": "Bitte eine Schriftart ohne Schnörkel verwenden",
+      "size": 3026,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0010-94bd449b-486a-4eae-904e-19ca68fe2386.html",
+      "promptSource": "message"
     }
   ]
 }

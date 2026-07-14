@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "fileName": "vorlage.html",
+  "entries": [
+    {
+      "id": "d77147b5-76a1-479f-beb0-55349b2ed085",
+      "fileName": "vorlage.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784031348431,
+      "source": "ai",
+      "prompt": "Wir haben jetzt ein festes Raster für die Seite. Kopf - und Fußzeilen. Diese dürfen nicht mehr verändert werden. Die restlichen Seiteninhalte müssen jetzt besser verteilt werden.\n\n1) Vereinheitliche die Abstände zwischen Headliness, Hero Texten und den nachfolgenden Elementen. \n2) Wähle die Abstände zwischen einzelnen Absätzen, sowie den Bild/Text Abschnitten so, das diese einheitlich erscheinen und das keine übergroßen Leerräume liegen bleiben. \n3) Achte darauf das die Bilder in den Bild/Text Abschnitten und die Bilder in den drei Spalten Gallerien gleich groß sind. Hier bitte an den Formaten der drei Spalten Gallerien orientieren, weil deren Bildgröße optimal erscheint.\n\nAusgewählter Skill: impeccable-design-polish. Verwende ihn als primären Workflow für diesen Schritt. Workflow rule: define the aesthetic goal and constraints first, then search and match resources; when user choice is needed, generate a structured question-form with editable custom answers and continue after confirmation.\nOptimiere dieses Design, bis es auslieferbereit ist: Prüfe Hierarchie, Typografie, Abstände, responsives Verhalten, Button-Zustände, Leer-/Lade-/Fehlerzustände und Barrierefreiheit; behebe die wichtigsten Probleme direkt.\n\nBeziehe die Aufgabe auf die fünf Seiten der Broschüre, nebst den verwendeten Buildern.",
+      "size": 1998,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-d77147b5-76a1-479f-beb0-55349b2ed085.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "637347bd-ecf8-44b5-b6d9-be6658b6fbdb",
+      "fileName": "vorlage.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784032128046,
+      "source": "ai",
+      "prompt": "Bitte eine Schriftart ohne Schnörkel verwenden",
+      "size": 1869,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-637347bd-ecf8-44b5-b6d9-be6658b6fbdb.html",
+      "promptSource": "message"
+    }
+  ]
+}

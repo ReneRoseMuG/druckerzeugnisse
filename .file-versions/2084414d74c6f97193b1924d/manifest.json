@@ -29,6 +29,34 @@
       "kind": "html",
       "contentPath": "0002-efcb4c80-d10f-4127-bd9a-0dba1f2f5238.html",
       "promptSource": "message"
+    },
+    {
+      "id": "797575fa-c9b5-4ed5-932a-984333378eff",
+      "fileName": "elektroanschluss.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784031348435,
+      "source": "ai",
+      "prompt": "Wir haben jetzt ein festes Raster für die Seite. Kopf - und Fußzeilen. Diese dürfen nicht mehr verändert werden. Die restlichen Seiteninhalte müssen jetzt besser verteilt werden.\n\n1) Vereinheitliche die Abstände zwischen Headliness, Hero Texten und den nachfolgenden Elementen. \n2) Wähle die Abstände zwischen einzelnen Absätzen, sowie den Bild/Text Abschnitten so, das diese einheitlich erscheinen und das keine übergroßen Leerräume liegen bleiben. \n3) Achte darauf das die Bilder in den Bild/Text Abschnitten und die Bilder in den drei Spalten Gallerien gleich groß sind. Hier bitte an den Formaten der drei Spalten Gallerien orientieren, weil deren Bildgröße optimal erscheint.\n\nAusgewählter Skill: impeccable-design-polish. Verwende ihn als primären Workflow für diesen Schritt. Workflow rule: define the aesthetic goal and constraints first, then search and match resources; when user choice is needed, generate a structured question-form with editable custom answers and continue after confirmation.\nOptimiere dieses Design, bis es auslieferbereit ist: Prüfe Hierarchie, Typografie, Abstände, responsives Verhalten, Button-Zustände, Leer-/Lade-/Fehlerzustände und Barrierefreiheit; behebe die wichtigsten Probleme direkt.\n\nBeziehe die Aufgabe auf die fünf Seiten der Broschüre, nebst den verwendeten Buildern.",
+      "size": 3627,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-797575fa-c9b5-4ed5-932a-984333378eff.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "6d241732-3048-4c0d-96da-0357d2eec9b1",
+      "fileName": "elektroanschluss.html",
+      "version": 4,
+      "label": "Version 4",
+      "createdAt": 1784032128044,
+      "source": "ai",
+      "prompt": "Bitte eine Schriftart ohne Schnörkel verwenden",
+      "size": 3498,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0004-6d241732-3048-4c0d-96da-0357d2eec9b1.html",
+      "promptSource": "message"
     }
   ]
 }

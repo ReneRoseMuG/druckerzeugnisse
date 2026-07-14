@@ -85,6 +85,20 @@
       "kind": "html",
       "contentPath": "0006-38041729-ef06-4a96-8c06-be74bb6d060f.html",
       "promptSource": "message"
+    },
+    {
+      "id": "07e1ab61-15ab-4235-92e3-8c2b22814bd4",
+      "fileName": "fundament-skizze.html",
+      "version": 7,
+      "label": "Version 7",
+      "createdAt": 1784032128044,
+      "source": "ai",
+      "prompt": "Bitte eine Schriftart ohne Schnörkel verwenden",
+      "size": 1369,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0007-07e1ab61-15ab-4235-92e3-8c2b22814bd4.html",
+      "promptSource": "message"
     }
   ]
 }

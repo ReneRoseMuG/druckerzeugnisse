@@ -15,6 +15,20 @@
       "kind": "html",
       "contentPath": "0001-3879d242-c299-462f-af68-f8985193d594.html",
       "promptSource": "message"
+    },
+    {
+      "id": "3f57606e-056e-4310-b18a-362ff600326b",
+      "fileName": "vorbereitung.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784032128044,
+      "source": "ai",
+      "prompt": "Bitte eine Schriftart ohne Schnörkel verwenden",
+      "size": 2684,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-3f57606e-056e-4310-b18a-362ff600326b.html",
+      "promptSource": "message"
     }
   ]
 }
