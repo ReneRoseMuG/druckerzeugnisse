@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "fileName": "fundament-skizze.html",
+  "entries": [
+    {
+      "id": "33187c86-747b-4c8d-b902-f243488532f5",
+      "fileName": "fundament-skizze.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784018082731,
+      "source": "ai",
+      "prompt": "Die Headline Das Fundament auf der Seite Fundament muss verändert werden in Maße und Details für das Fundament",
+      "size": 6268,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-33187c86-747b-4c8d-b902-f243488532f5.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "3cab7738-2b64-4edd-89b1-715aaabd19c9",
+      "fileName": "fundament-skizze.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784022042521,
+      "source": "ai",
+      "prompt": "dieses Bild als Skizze und als Thumbnail verwenden",
+      "size": 6451,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-3cab7738-2b64-4edd-89b1-715aaabd19c9.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "1bce8b59-d9b3-443a-9e23-cdc5b5d06ac0",
+      "fileName": "fundament-skizze.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784022353425,
+      "source": "ai",
+      "prompt": "noch einmal tauschen",
+      "size": 6393,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-1bce8b59-d9b3-443a-9e23-cdc5b5d06ac0.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "112f1af9-ab17-47f3-810a-e809e41df869",
+      "fileName": "fundament-skizze.html",
+      "version": 4,
+      "label": "Version 4",
+      "createdAt": 1784022520386,
+      "source": "ai",
+      "prompt": "DU hast jetzt das alte und neue Bild als Skizze, das alte bitte entfernen und den Hintergrund au wweiß stellen",
+      "size": 1456,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0004-112f1af9-ab17-47f3-810a-e809e41df869.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "882608b4-7763-418b-bf50-f78a39911182",
+      "fileName": "fundament-skizze.html",
+      "version": 5,
+      "label": "Version 5",
+      "createdAt": 1784023774937,
+      "source": "ai",
+      "prompt": "bitte dieses Bild als Skizze verwenden",
+      "size": 1454,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0005-882608b4-7763-418b-bf50-f78a39911182.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "38041729-ef06-4a96-8c06-be74bb6d060f",
+      "fileName": "fundament-skizze.html",
+      "version": 6,
+      "label": "Version 6",
+      "createdAt": 1784030392262,
+      "source": "ai",
+      "prompt": "Das passt nicht, die Kopf und Fußbereiche sind nicht auf allen Seiten identisch. Wie können wir das lösen? Wir müssen sicherstellen, das aLLE kOPFBEREICHE UND fU?ZEILEN GLEICH BHOCH SIND UND AN DEN GLEICHEN pOSITIONEN BEGINNEN",
+      "size": 1498,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0006-38041729-ef06-4a96-8c06-be74bb6d060f.html",
+      "promptSource": "message"
+    }
+  ]
+}

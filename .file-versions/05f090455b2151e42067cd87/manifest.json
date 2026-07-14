@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fileName": "vorbereitung.html",
+  "entries": [
+    {
+      "id": "3879d242-c299-462f-af68-f8985193d594",
+      "fileName": "vorbereitung.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784030392250,
+      "source": "ai",
+      "prompt": "Das passt nicht, die Kopf und Fußbereiche sind nicht auf allen Seiten identisch. Wie können wir das lösen? Wir müssen sicherstellen, das aLLE kOPFBEREICHE UND fU?ZEILEN GLEICH BHOCH SIND UND AN DEN GLEICHEN pOSITIONEN BEGINNEN",
+      "size": 2813,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-3879d242-c299-462f-af68-f8985193d594.html",
+      "promptSource": "message"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ broschuere/
 ├── vorbereitung.html      Seite 02 · Vorbereitungen am Bauplatz
 ├── fundament-skizze.html  Seite 03 · Fundament (Schemazeichnung)
 ├── elektroanschluss.html  Seite 04 · Elektroanschluss (Text folgt)
-├── holzschutz.html        Seite 05 · Holzschutz (Text folgt)
+├── holzschutz.html        Seite 05 · Holzschutz, Thermoholz und Pflege
 ├── vorlage.html           Blanko-Vorlage für neue Seiten
 ├── css/
 │   └── broschuere.css     Gemeinsame Druckstile + Marken-Tokens + Schrift

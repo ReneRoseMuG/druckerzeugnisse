@@ -29,19 +29,26 @@ body{
 }
 
 .sheet{
-  width:210mm;min-height:297mm;
+  width:210mm;height:297mm;min-height:297mm;
   background:var(--paper);
   padding:15mm 16mm 13mm;
   box-shadow:0 24px 60px -28px rgba(28,29,44,.55);
-  display:flex;flex-direction:column;
+  display:grid;grid-template-rows:24mm minmax(0,1fr) 31mm;
   -webkit-print-color-adjust:exact;print-color-adjust:exact;
 }
 
 /* ── Kopf ─────────────────────────────────────────────── */
 .doc-head{
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:12mm;
-  padding-bottom:8px;border-bottom:1.5px solid var(--wood);
+  height:24mm;padding-bottom:8px;border-bottom:1.5px solid var(--wood);
 }
+.page-content{min-height:0;overflow:visible}
+.page-content-compact .lead-block{margin-top:5mm}
+.page-content-compact .info-rows{margin-top:4mm;gap:3mm}
+.page-content-compact .info-row{gap:2mm}
+.page-content-compact .info-note{margin-top:3mm}
+.page-content-compact .advice-row{margin-top:3mm}
+.page-content-compact .photo-grid{margin-top:3mm}
 .brand-logo{
   display:block;width:44mm;max-width:100%;height:auto;
 }
@@ -82,12 +89,13 @@ h1{
 
 .info-rows{margin:7mm 0 0;width:100%;display:flex;flex-direction:column;gap:5mm}
 .info-row{display:flex;flex-direction:column;gap:3mm}
-.info-row-body{display:grid;grid-template-columns:50mm 1fr;gap:7mm;align-items:start}
+.info-row-body{display:grid;grid-template-columns:calc((100% - 8mm)/3) 1fr;gap:7mm;align-items:start}
 .info-row figure .frame{aspect-ratio:4/3}
 .info-row h3{margin:0;font-family:var(--display);font-weight:600;font-size:17px;color:var(--ink);text-align:center}
 .info-row p{margin:0;font-size:12px;line-height:1.55;color:var(--ink-soft);text-align:justify;hyphens:auto}
 .info-note{margin:5mm 0 0;width:100%}
 .info-note p{margin:0;font-size:12px;line-height:1.55;color:var(--ink-soft);text-align:justify;hyphens:auto}
+.advice-row{margin-top:5mm}
 .image-placeholder{background:var(--paper-warm)}
 
 /* ── Bildstrecke ─────────────────────────────────────── */
@@ -123,25 +131,32 @@ figcaption{
 /* Kleiner Begleittext: gleiche Breite wie die Seitenauflistung. */
 .cover-sub{margin:18px 0 0;font-size:13.5px;line-height:1.62;color:var(--ink-soft);width:100%;text-align:justify;hyphens:auto}
 
-.toc{margin:16mm 0 0;width:100%}
+.toc{margin:11mm 0 0;width:100%}
 .toc-item{
-  display:grid;grid-template-columns:34px 1fr auto;align-items:baseline;gap:16px;
-  padding:13px 4px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:8mm 38mm minmax(0,1fr) auto;align-items:center;gap:5mm;
+  padding:3.2mm 1mm;border-top:1px solid var(--line);
   color:inherit;text-decoration:none;
 }
 .toc-item:visited{color:inherit}
 .toc-item:last-child{border-bottom:1px solid var(--line)}
 .toc-idx{font-family:var(--mono);font-size:11px;color:var(--wood-deep)}
+.toc-thumb{
+  display:block;width:38mm;aspect-ratio:3/2;overflow:hidden;
+  border:1px solid var(--line);background:var(--paper-warm);
+}
+.toc-thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.toc-thumb-sketch img{object-fit:contain;padding:1.5mm}
+.toc-thumb-sketch{background:var(--paper)}
 .toc-name{font-family:var(--display);font-weight:600;font-size:18px;color:var(--ink)}
 .toc-name small{display:block;font-family:var(--body);font-weight:400;font-size:10.5px;color:var(--muted);margin-top:2px}
 .toc-page{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
 /* ── Skizze / Schema ─────────────────────────────────── */
 .sketch{
-  margin-top:12mm;border:1px solid var(--line);background:var(--paper-warm);
+  margin-top:12mm;border:1px solid var(--line);background:var(--paper);
   padding:11mm 8mm;display:flex;flex-direction:column;align-items:center;gap:10px;
 }
-.sketch svg{width:100%;max-width:150mm;height:auto}
+.sketch > img{display:block;width:100%;max-width:150mm;height:auto;object-fit:contain}
 .sketch-cap{
   width:100%;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--muted);text-align:left;
@@ -155,7 +170,7 @@ figcaption{
 }
 
 /* ── Fuß: einheitliches Impressum (4 Spalten + Rechtszeile) ── */
-.doc-foot{margin-top:auto;padding-top:5mm}
+.doc-foot{height:31mm;margin:0;padding-top:5mm;align-self:end}
 .imprint{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}
 .imp-col{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
 .imp-ico{width:20px;height:20px;color:var(--green);flex:none}
@@ -171,7 +186,7 @@ figcaption{
 @page{size:A4 portrait;margin:0}
 @media print{
   body{background:#fff;padding:0;gap:0;display:block}
-  .sheet{box-shadow:none;width:auto;min-height:auto;margin:0}
+  .sheet{box-shadow:none;width:210mm;height:297mm;min-height:297mm;margin:0}
   /* Mehrseitig: jeder Bogen beginnt auf einer neuen Druckseite. */
   .sheet + .sheet{break-before:page}
 }

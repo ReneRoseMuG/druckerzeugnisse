@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "fileName": "elektroanschluss.html",
+  "entries": [
+    {
+      "id": "adf55b19-53fa-4600-a939-fb68cde57f94",
+      "fileName": "elektroanschluss.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784018526608,
+      "source": "ai",
+      "prompt": "bereiuthalten zum Aufbauzeitpunkt!",
+      "size": 3583,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-adf55b19-53fa-4600-a939-fb68cde57f94.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "efcb4c80-d10f-4127-bd9a-0dba1f2f5238",
+      "fileName": "elektroanschluss.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784030392262,
+      "source": "ai",
+      "prompt": "Das passt nicht, die Kopf und Fußbereiche sind nicht auf allen Seiten identisch. Wie können wir das lösen? Wir müssen sicherstellen, das aLLE kOPFBEREICHE UND fU?ZEILEN GLEICH BHOCH SIND UND AN DEN GLEICHEN pOSITIONEN BEGINNEN",
+      "size": 3648,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-efcb4c80-d10f-4127-bd9a-0dba1f2f5238.html",
+      "promptSource": "message"
+    }
+  ]
+}

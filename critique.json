@@ -1,0 +1,11 @@
+{
+  "kind": "critique-panel",
+  "score": 5,
+  "axes": {
+    "clarity": { "score": 5, "notes": "Die neu bereitgestellte Premium-Skizze wird als einzige Bildquelle auf Fundamentseite und Deckblatt verwendet." },
+    "hierarchy": { "score": 5, "notes": "Die reduzierte querformatige Zeichnung nutzt die Breite der Fundamentseite und bleibt im Deckblatt-Thumbnail vollständig erfassbar." },
+    "typography": { "score": 4, "notes": "Serifentitel, kleine sachliche Unterzeilen und monospaced Seitenangaben bewahren die bestehende Broschürenhierarchie." },
+    "motion": { "score": 5, "notes": "Für das Druckmedium nicht relevant." },
+    "brand": { "score": 5, "notes": "Der rein weiße Hintergrund auf Fundamentseite und Thumbnail unterstützt die sachliche technische Zeichnung und den klaren Druckcharakter." }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere-gesamt.html",
+  "entries": [
+    {
+      "id": "91ee41eb-5d32-495b-bc0d-e0e4e9624235",
+      "fileName": "broschuere-gesamt.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784027980684,
+      "source": "ai",
+      "prompt": "Ich möchte die Bröschüre als PDF habe, so wie wir sie später drucken werden, also index.html und die vier folgenen Seiten",
+      "size": 11773,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-91ee41eb-5d32-495b-bc0d-e0e4e9624235.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "9c211dbe-9ccd-4d55-abeb-66f52dcc5f88",
+      "fileName": "broschuere-gesamt.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784028203244,
+      "source": "ai",
+      "prompt": "einige der Bilder sind plötzlich viel schmaler und die als Fußzeile gedachten Elöemente liegen zu hoch",
+      "size": 12094,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-9c211dbe-9ccd-4d55-abeb-66f52dcc5f88.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "766a6411-ad50-4fb0-bb7a-da260f1b4cdc",
+      "fileName": "broschuere-gesamt.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784030392261,
+      "source": "ai",
+      "prompt": "Das passt nicht, die Kopf und Fußbereiche sind nicht auf allen Seiten identisch. Wie können wir das lösen? Wir müssen sicherstellen, das aLLE kOPFBEREICHE UND fU?ZEILEN GLEICH BHOCH SIND UND AN DEN GLEICHEN pOSITIONEN BEGINNEN",
+      "size": 11789,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-766a6411-ad50-4fb0-bb7a-da260f1b4cdc.html",
+      "promptSource": "message"
+    }
+  ]
+}
