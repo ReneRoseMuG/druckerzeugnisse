@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "vorlage-kopf-fusszeile.html",
+  "entry": "broschuere/vorlage-kopf-fusszeile.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-14T15:44:57.561Z",
+  "updatedAt": "2026-07-14T15:44:57.561Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

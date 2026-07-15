@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "broschuere/fundament-skizze-oval-sauna-premium.html",
+  "entry": "broschuere/fundament-skizze-oval-sauna-premium.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-15T08:10:13.037Z",
+  "updatedAt": "2026-07-15T08:10:13.037Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

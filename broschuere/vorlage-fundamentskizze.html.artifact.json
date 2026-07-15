@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "vorlage-fundamentskizze.html",
+  "entry": "broschuere/vorlage-fundamentskizze.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-07-15T07:01:51.084Z",
+  "updatedAt": "2026-07-15T07:01:51.084Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}
