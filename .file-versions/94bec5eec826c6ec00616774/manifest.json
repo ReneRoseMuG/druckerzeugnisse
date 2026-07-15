@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fileName": "vorlage-kopf-fusszeile.html",
+  "entries": [
+    {
+      "id": "531cc8e6-8278-4e05-82da-7c685938e21c",
+      "fileName": "vorlage-kopf-fusszeile.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784043965911,
+      "source": "ai",
+      "prompt": "Ich brauche eine Leere Seite, als PDF Vorlage, die nur Kopf- und Fußzeile enthält",
+      "size": 887,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-531cc8e6-8278-4e05-82da-7c685938e21c.html",
+      "promptSource": "message"
+    }
+  ]
+}

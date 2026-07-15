@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/vorlage-fundamentskizze.html",
+  "entries": [
+    {
+      "id": "8288450b-bb14-4e88-82bd-e7eb4fd778d0",
+      "fileName": "broschuere/vorlage-fundamentskizze.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784100725273,
+      "source": "ai",
+      "prompt": "Bitte das Projekt aufräumen: Leg einen Ordner broschuere an. verschiebe bilder, css, js dorthin. verschiebe die html Seiten dorthin. Stelle sicher, das Bilder und links und das Java Script noch funktioniren. Leg im root einen Ordner Ausgabe an.\n\nLeg eine Regel an, das PDF Dokumente immer in Ausgabe erzeugt werden",
+      "size": 1764,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-8288450b-bb14-4e88-82bd-e7eb4fd778d0.html",
+      "promptSource": "message"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/elektroanschluss.html",
+  "entries": [
+    {
+      "id": "20792ff9-89d2-4dfa-8999-c535cc64cf08",
+      "fileName": "broschuere/elektroanschluss.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784100725269,
+      "source": "ai",
+      "prompt": "Bitte das Projekt aufräumen: Leg einen Ordner broschuere an. verschiebe bilder, css, js dorthin. verschiebe die html Seiten dorthin. Stelle sicher, das Bilder und links und das Java Script noch funktioniren. Leg im root einen Ordner Ausgabe an.\n\nLeg eine Regel an, das PDF Dokumente immer in Ausgabe erzeugt werden",
+      "size": 3498,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-20792ff9-89d2-4dfa-8999-c535cc64cf08.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "bc619e3c-da61-4b2d-bec0-225419d2e6ab",
+      "fileName": "broschuere/elektroanschluss.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784101089372,
+      "source": "ai",
+      "prompt": "wir müssen auf der Seite Elektroanschluss den Text unter der Headline Stromversorgung für Steckdosen und bei Holzbefeuerung leicht verändern. Den letzten Satz Haben Sie sicher für einen holzbefeuerten Ofen.. müssen wir entschärfen. Das Wort Pflicht muss verschwinden. Wir formulieren statt dessen ..wird benötigt um die Beleuchtung zu betreiben..\n\nFühre die Änderung auf in broschuere-gesamt.html aus und erzeuge die PDF Deitein anschließend neu",
+      "size": 3493,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-bc619e3c-da61-4b2d-bec0-225419d2e6ab.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "9fa326e6-a513-4d0b-933c-3ed45793c261",
+      "fileName": "broschuere/elektroanschluss.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784101751640,
+      "source": "ai",
+      "prompt": "Auf der Startseite die Nummerierung der drei Kategorien entfernen. Die vier Seiten der broschüre bekommen Seitenzahlen unten rechts.\nIch habe einen Ordner fundament-skizzen eingefügt. Dorthin muss die Bilddatei Saunafüße-Premium verschoeben und in skizze-premuim umbenannt werden. Bitte auch die html Seiten anpassen.",
+      "size": 3514,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-9fa326e6-a513-4d0b-933c-3ed45793c261.html",
+      "promptSource": "message"
+    }
+  ]
+}

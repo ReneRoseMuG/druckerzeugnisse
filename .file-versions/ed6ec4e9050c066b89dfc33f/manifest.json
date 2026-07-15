@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/holzschutz.html",
+  "entries": [
+    {
+      "id": "c851b3f9-78b2-4d01-b946-1bca3ed550c5",
+      "fileName": "broschuere/holzschutz.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784100725270,
+      "source": "ai",
+      "prompt": "Bitte das Projekt aufräumen: Leg einen Ordner broschuere an. verschiebe bilder, css, js dorthin. verschiebe die html Seiten dorthin. Stelle sicher, das Bilder und links und das Java Script noch funktioniren. Leg im root einen Ordner Ausgabe an.\n\nLeg eine Regel an, das PDF Dokumente immer in Ausgabe erzeugt werden",
+      "size": 4091,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-c851b3f9-78b2-4d01-b946-1bca3ed550c5.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "9071bb20-2e76-4370-9101-32404340ca51",
+      "fileName": "broschuere/holzschutz.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784101353387,
+      "source": "ai",
+      "prompt": "Wir entfernen die Bildunterschriftne unter den drei Holzschutz Bildern.\n\nHaben wir eine Regel, die Änderungen an einzelnen Seiten auch in broschuere-gesamt und die PDF Ausgaben spiegelt?",
+      "size": 3940,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-9071bb20-2e76-4370-9101-32404340ca51.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "b103955f-2d42-4df4-8f19-0ce35f3f36fd",
+      "fileName": "broschuere/holzschutz.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784101751640,
+      "source": "ai",
+      "prompt": "Auf der Startseite die Nummerierung der drei Kategorien entfernen. Die vier Seiten der broschüre bekommen Seitenzahlen unten rechts.\nIch habe einen Ordner fundament-skizzen eingefügt. Dorthin muss die Bilddatei Saunafüße-Premium verschoeben und in skizze-premuim umbenannt werden. Bitte auch die html Seiten anpassen.",
+      "size": 3961,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-b103955f-2d42-4df4-8f19-0ce35f3f36fd.html",
+      "promptSource": "message"
+    }
+  ]
+}

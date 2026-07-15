@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "fileName": "vorlage-fundamentskizze.html",
+  "entries": [
+    {
+      "id": "68ec5fa6-0c45-47e7-bbfb-d15f4d5d8cf9",
+      "fileName": "vorlage-fundamentskizze.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784098996518,
+      "source": "ai",
+      "prompt": "wir müssen daraus eine Vorlage machen. Wir behalten die Headline und den Hero Text. Darunter als H2 Fundamentskizze für: Oval Sauna Premium IV: Die Skizze weglassen. Die Seite bitte vorlage-fundamentskizze.html nennen.",
+      "size": 1625,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-68ec5fa6-0c45-47e7-bbfb-d15f4d5d8cf9.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "41dc9def-db49-4642-abbc-5bcb6590ad2c",
+      "fileName": "vorlage-fundamentskizze.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784099187770,
+      "source": "ai",
+      "prompt": "den Doppelpunkt am Ende der H2 entfernen",
+      "size": 1624,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-41dc9def-db49-4642-abbc-5bcb6590ad2c.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "75bc11da-cf89-4d2b-8083-f96b4ae1e2f4",
+      "fileName": "vorlage-fundamentskizze.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784099741579,
+      "source": "ai",
+      "prompt": "wir fügen unter dem hero eine Zeile ein: Beachten Sie die waagerechte Ausrichtung des Fundaments! Rot hervorgehoben.",
+      "size": 1764,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-75bc11da-cf89-4d2b-8083-f96b4ae1e2f4.html",
+      "promptSource": "message"
+    }
+  ]
+}

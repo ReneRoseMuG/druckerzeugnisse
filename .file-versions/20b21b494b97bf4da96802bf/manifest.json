@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/vorlage-kopf-fusszeile.html",
+  "entries": [
+    {
+      "id": "b09f5fb6-f5dc-4345-8beb-f61c2d179118",
+      "fileName": "broschuere/vorlage-kopf-fusszeile.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784100725273,
+      "source": "ai",
+      "prompt": "Bitte das Projekt aufräumen: Leg einen Ordner broschuere an. verschiebe bilder, css, js dorthin. verschiebe die html Seiten dorthin. Stelle sicher, das Bilder und links und das Java Script noch funktioniren. Leg im root einen Ordner Ausgabe an.\n\nLeg eine Regel an, das PDF Dokumente immer in Ausgabe erzeugt werden",
+      "size": 887,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-b09f5fb6-f5dc-4345-8beb-f61c2d179118.html",
+      "promptSource": "message"
+    }
+  ]
+}

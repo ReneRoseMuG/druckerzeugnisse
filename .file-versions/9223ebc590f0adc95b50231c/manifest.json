@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/fundament-skizze-oval-sauna-premium.html",
+  "entries": [
+    {
+      "id": "ac826d36-2f67-4661-b337-5af15c51187a",
+      "fileName": "broschuere/fundament-skizze-oval-sauna-premium.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784103188787,
+      "source": "ai",
+      "prompt": "[form answers — discovery]\n- Wo sollen die erzeugten HTML-Seiten liegen?: Direkt unter broschuere/ [value: broschuere_root]\n- Welches Schema sollen die PDF-Dateinamen verwenden?: Fundament-Skizze-Oval-Sauna-Premium.pdf [value: compact]\n- Wie soll die Erzeugung künftig ausgelöst werden?: Ausschließlich per Ansage im Chat [value: chat_only]",
+      "size": 2067,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-ac826d36-2f67-4661-b337-5af15c51187a.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "dd00e7ad-fd15-49ab-820f-dc79f0ba9068",
+      "fileName": "broschuere/fundament-skizze-oval-sauna-premium.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784105506838,
+      "source": "ai",
+      "prompt": "bitte entfernen und die Azusgabe aanpassen",
+      "size": 1978,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-dd00e7ad-fd15-49ab-820f-dc79f0ba9068.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "c5f31dbf-c083-4d21-bb97-be412364a60d",
+      "fileName": "broschuere/fundament-skizze-oval-sauna-premium.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784105789868,
+      "source": "ai",
+      "prompt": "Bitte Regel einfügen: Unter die Skizze wird ein Satz eingefügt: Alle Maße sind Millimeter Angaben",
+      "size": 2094,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-c5f31dbf-c083-4d21-bb97-be412364a60d.html",
+      "promptSource": "message"
+    }
+  ]
+}

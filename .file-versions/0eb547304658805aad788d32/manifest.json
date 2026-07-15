@@ -141,6 +141,20 @@
       "kind": "html",
       "contentPath": "0010-94bd449b-486a-4eae-904e-19ca68fe2386.html",
       "promptSource": "message"
+    },
+    {
+      "id": "a4fd948c-3eb2-4dd9-9c79-3f562f977045",
+      "fileName": "index.html",
+      "version": 11,
+      "label": "Version 11",
+      "createdAt": 1784043850838,
+      "source": "ai",
+      "prompt": "Wir entfernen die Seite Maße und Fundament aus der Broschüre. Passe die Deckseiote und die Nummerierung an. Die entfernte Seite wird als Beilage und eigenes PDF behandelt.. Wir ergänzen im Hero Bereich der Startseite: Maße und Details zum Fundament Ihrer Saune, entnehmen Sie der beigelegten Skizze.",
+      "size": 2658,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0011-a4fd948c-3eb2-4dd9-9c79-3f562f977045.html",
+      "promptSource": "message"
     }
   ]
 }

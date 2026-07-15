@@ -2,53 +2,69 @@
 
 Eigenständiges, druckbares Informationsprojekt der Meisel & Gerken GmbH.
 Unabhängig von der Website (kein Bezug zu `site.css`). Jede Seite ist eine
-druckbare A4-Datei (Hochformat).
+druckbare A4-Datei im Hochformat.
 
 ## Aufbau
 
-```
-broschuere/
-├── index.html             Seite 01 · Deckblatt & Themenübersicht
-├── vorbereitung.html      Seite 02 · Vorbereitungen am Bauplatz
-├── fundament-skizze.html  Seite 03 · Fundament (Schemazeichnung)
-├── elektroanschluss.html  Seite 04 · Elektroanschluss (Text folgt)
-├── holzschutz.html        Seite 05 · Holzschutz, Thermoholz und Pflege
-├── vorlage.html           Blanko-Vorlage für neue Seiten
-├── css/
-│   └── broschuere.css     Gemeinsame Druckstile + Marken-Tokens + Schrift
-├── js/
-│   └── broschuere.js      Einheitliche Impressum-Fußzeile (eine Pflegestelle)
-├── quellen/
-│   └── anschrieben-key-facts-lang.pdf  Quelldokument / Key Facts
-└── bilder/                Bilder der Vorabinformationen (3:2)
+```text
+.
+├── broschuere/
+│   ├── index.html                       Seite 01 · Deckblatt & Themenübersicht
+│   ├── vorbereitung.html                Seite 02 · Vorbereitungen am Bauplatz
+│   ├── elektroanschluss.html            Seite 03 · Elektroanschluss
+│   ├── holzschutz.html                  Seite 04 · Holzschutz, Thermoholz und Pflege
+│   ├── broschuere-gesamt.html           Zusammengeführte HTML-Druckfassung
+│   ├── vorlage-fundamentskizze.html     Vorlage · Maße und Details zum Fundament
+│   ├── vorlage-kopf-fusszeile.html      Leere A4-Vorlage mit Kopf- und Fußzeile
+│   ├── css/
+│   │   └── broschuere.css               Gemeinsame Druckstile und Marken-Tokens
+│   ├── js/
+│   │   └── broschuere.js                Einheitliche Impressum-Fußzeile
+│   ├── bilder/                          Bilder der Vorabinformationen
+│   └── fundament-skizzen/
+│       └── premuim.png                   Technische Fundamentgrafik für Oval Sauna Premium
+├── Ausgabe/                             Ausschließlicher Zielordner für PDFs
+└── quellen/
+    └── anschrieben-key-facts-lang.pdf   Quelldokument, keine erzeugte Ausgabe
 ```
 
 ## Neue Seite anlegen
 
-1. `vorlage.html` kopieren und sinnvoll benennen (z. B. `lieferung.html`).
+1. `broschuere/vorlage-kopf-fusszeile.html` kopieren und innerhalb von `broschuere/` sinnvoll benennen, zum Beispiel `lieferung.html`.
 2. Titel, linke Kopf-Kennung (`doc-kicker`), rechte Kopf-Kennung (`doc-tag`), Headline, Texte und Bilder einsetzen.
-3. Bilder nach `bilder/` legen, im einheitlichen 3:2-Format, damit sie randfüllend passen.
-4. Seite in der Themenübersicht der `index.html` eintragen.
+3. Bilder nach `broschuere/bilder/` legen und im einheitlichen 3:2-Format vorbereiten.
+4. Die Seite in `broschuere/index.html` eintragen.
 
 ## Marke
 
-- Dunkel `#1C1D2C`, Holz `#ae926c`, klare serifenlose Display-Schrift.
-- Alle Stile liegen zentral in `css/broschuere.css`. Nichts inline stylen.
-- Die Kopfzeile zeigt links die Einordnung, mittig das Logo und rechts den
-  jeweiligen Abschnitt.
-- Die einheitliche Fußzeile (Impressum, Bank, Rechtliches) wird zentral aus
-  `js/broschuere.js` erzeugt. Jede Seite trägt nur ein leeres
-  `<footer class="doc-foot" data-imprint></footer>` und bindet das Skript ein.
-  Adressen, Bankdaten o. Ä. **nur** in `js/broschuere.js` ändern.
+- Dunkel `#1C1D2C`, Holz `#ae926c`, einheitlich `Segoe UI` für sämtliche Texte.
+- Alle Stile liegen zentral in `broschuere/css/broschuere.css`. Nichts inline stylen.
+- Die Kopfzeile zeigt links die Einordnung, mittig das Logo und rechts den jeweiligen Abschnitt.
+- Die einheitliche Fußzeile mit Impressum, Bank und Rechtlichem wird zentral aus `broschuere/js/broschuere.js` erzeugt. Jede Seite trägt nur ein leeres `<footer class="doc-foot" data-imprint></footer>` und bindet das Skript ein. Adressen, Bankdaten und rechtliche Angaben nur dort ändern.
 
-## Drucken / PDF
+## Drucken und PDF-Ausgabe
 
-- Die zusammengeführte Ausgabedatei heißt verbindlich `Kundenbroschüre.pdf`.
-- Im Browser über Drucken → Ziel „Als PDF speichern".
-- Papierformat A4, Ränder „Keine", Hintergrundgrafiken aktivieren
-  (sonst fehlen Holz-Linie und Bildrahmen).
+- Erzeugte PDF-Dokumente werden ausnahmslos im Ordner `Ausgabe/` gespeichert. Im Projektstamm und unter `broschuere/` dürfen keine erzeugten PDFs liegen.
+- Die zusammengeführte Ausgabedatei heißt verbindlich `Ausgabe/Kundenbroschüre.pdf`.
+- Modellbezogene Fundamentskizzen werden als `Ausgabe/Fundament-Skizze-<Vollständiger-Modellname>.pdf` ausgegeben.
+- Die leere Kopf- und Fußzeilenvorlage wird als `Ausgabe/Vorlage-Kopf-Fusszeile.pdf` ausgegeben.
+- Im Browser über Drucken → Ziel „Als PDF speichern“.
+- Papierformat A4, Ränder „Keine“, Hintergrundgrafiken aktivieren.
 
 ## Schrift
 
-Die Broschüre verwendet eine serifenlose Systemschrift mit passenden lokalen
-Fallbacks. Für den Druck ist deshalb keine externe Schriftdatei erforderlich.
+Die Broschüre verwendet ausschließlich `Segoe UI`. Überschriften, Fließtext,
+Kennzeichnungen und Seitennummern unterscheiden sich nur durch Größe,
+Schriftschnitt und Laufweite. Dadurch wird in den PDF-Ausgaben nur eine
+Schriftfamilie eingebettet; eine externe Schriftdatei ist nicht erforderlich.
+
+## Fundamentskizzen-Beilagen erzeugen
+
+Auf Ansage werden alle Grafiken unter `broschuere/fundament-skizzen/` verarbeitet. Der jeweilige Grafikname wird gemäß `AGENTS.md` einem vollständigen Modellnamen zugeordnet. Die HTML-Beilage wird direkt unter `broschuere/` gespeichert; die PDF-Ausgabe liegt ausschließlich unter `Ausgabe/`.
+
+Beispiel für `premuim.png`:
+
+- `broschuere/fundament-skizze-oval-sauna-premium.html`
+- `Ausgabe/Fundament-Skizze-Oval-Sauna-Premium.pdf`
+
+XL-Grafiken erzeugen zusätzlich eine inhaltsgleiche Suuri-Beilage, XL-Vorraum-Grafiken entsprechend eine Suuri-Vorraum-Beilage. Eine später vorhandene eigene Suuri-Grafik hat Vorrang.

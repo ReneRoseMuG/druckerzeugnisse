@@ -1,11 +1,11 @@
 {
   "kind": "critique-panel",
-  "score": 4.6,
+  "score": 5,
   "axes": {
-    "clarity": { "score": 5, "notes": "Ein gemeinsamer Inhaltsrhythmus ordnet Headline, Lead, Textmodule und Bildstrecken auf allen fünf Seiten." },
-    "hierarchy": { "score": 5, "notes": "Einheitliche Abschnittsabstände beseitigen übergroße Leerräume, ohne die feste Kopf- oder Fußzone anzutasten." },
-    "typography": { "score": 5, "notes": "Die gesamte Broschüre nutzt jetzt eine klare serifenlose Schriftfamilie mit ruhiger Laufweite; Textgrößen und Zeilenhöhen bleiben druckgerecht konsistent." },
-    "motion": { "score": 4, "notes": "Für das Druckmedium nicht relevant; interaktive Inhaltslinks nutzen im Bildschirmmodus kurze, zurückhaltende Zustände." },
-    "brand": { "score": 5, "notes": "Holzfarbener Akzent, technische Klarheit und das einheitliche 3:2-Bildformat bleiben über Einzel- und Gesamtfassung konsistent." }
+    "clarity": { "score": 5, "notes": "Der vollständige Modellname und die zugehörige technische Skizze sind eindeutig verbunden; der Dateialias premuim ist im Workflow ausdrücklich geregelt." },
+    "hierarchy": { "score": 5, "notes": "Headline, Erläuterung, Warnhinweis, Modellüberschrift und Skizze folgen einer klaren Leserichtung." },
+    "typography": { "score": 5, "notes": "Alle Druckausgaben betten ausschließlich Segoe UI ein; Hierarchie und technische Kennzeichnungen entstehen nur über Schriftschnitt, Größe und Laufweite." },
+    "motion": { "score": 5, "notes": "Für die statische Druckbeilage sind keine Bewegungs- oder Interaktionselemente erforderlich." },
+    "brand": { "score": 5, "notes": "Logo, Holzlinie, Warnfarbe, Kopfzeile und zentrales Impressum entsprechen der bestehenden Broschürenmarke." }
   }
 }

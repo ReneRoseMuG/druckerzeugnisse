@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "fileName": "broschuere/index.html",
+  "entries": [
+    {
+      "id": "9a55963c-1388-4bba-a92f-7e62a9134e18",
+      "fileName": "broschuere/index.html",
+      "version": 1,
+      "label": "Version 1",
+      "createdAt": 1784100725272,
+      "source": "ai",
+      "prompt": "Bitte das Projekt aufräumen: Leg einen Ordner broschuere an. verschiebe bilder, css, js dorthin. verschiebe die html Seiten dorthin. Stelle sicher, das Bilder und links und das Java Script noch funktioniren. Leg im root einen Ordner Ausgabe an.\n\nLeg eine Regel an, das PDF Dokumente immer in Ausgabe erzeugt werden",
+      "size": 2658,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0001-9a55963c-1388-4bba-a92f-7e62a9134e18.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "b62a03d4-7c70-440b-84d9-6088131157b4",
+      "fileName": "broschuere/index.html",
+      "version": 2,
+      "label": "Version 2",
+      "createdAt": 1784101751640,
+      "source": "ai",
+      "prompt": "Auf der Startseite die Nummerierung der drei Kategorien entfernen. Die vier Seiten der broschüre bekommen Seitenzahlen unten rechts.\nIch habe einen Ordner fundament-skizzen eingefügt. Dorthin muss die Bilddatei Saunafüße-Premium verschoeben und in skizze-premuim umbenannt werden. Bitte auch die html Seiten anpassen.",
+      "size": 2556,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0002-b62a03d4-7c70-440b-84d9-6088131157b4.html",
+      "promptSource": "message"
+    }
+  ]
+}
