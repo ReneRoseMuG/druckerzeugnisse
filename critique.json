@@ -2,10 +2,10 @@
   "kind": "critique-panel",
   "score": 5,
   "axes": {
-    "clarity": { "score": 5, "notes": "Der vollständige Modellname und die zugehörige technische Skizze sind eindeutig verbunden; der Dateialias premuim ist im Workflow ausdrücklich geregelt." },
-    "hierarchy": { "score": 5, "notes": "Headline, Erläuterung, Warnhinweis, Modellüberschrift und Skizze folgen einer klaren Leserichtung." },
-    "typography": { "score": 5, "notes": "Alle Druckausgaben betten ausschließlich Segoe UI ein; Hierarchie und technische Kennzeichnungen entstehen nur über Schriftschnitt, Größe und Laufweite." },
-    "motion": { "score": 5, "notes": "Für die statische Druckbeilage sind keine Bewegungs- oder Interaktionselemente erforderlich." },
-    "brand": { "score": 5, "notes": "Logo, Holzlinie, Warnfarbe, Kopfzeile und zentrales Impressum entsprechen der bestehenden Broschürenmarke." }
+    "clarity": { "score": 5, "notes": "Gewicht, Hartholzfüße, Nässeschutz und die vollständig waagerechte Fundamentausrichtung sind im zweiten Absatz eindeutig formuliert." },
+    "hierarchy": { "score": 5, "notes": "Die Textänderung bleibt innerhalb des bestehenden Abschnitts Fundament Varianten; Seitenaufbau und Leserichtung bleiben unverändert." },
+    "typography": { "score": 5, "notes": "Die neu exportierte Kundenbroschüre bettet ausschließlich Segoe UI und Segoe UI Semibold ein." },
+    "motion": { "score": 5, "notes": "Für die statische A4-Druckbroschüre sind keine Bewegungs- oder Interaktionselemente erforderlich." },
+    "brand": { "score": 5, "notes": "Logo, Holzlinie, Kopf- und Fußraster sowie die bestehende Broschürengestaltung bleiben unverändert." }
   }
 }

@@ -29,6 +29,34 @@
       "kind": "html",
       "contentPath": "0002-534746f3-9201-4ba7-bbe5-eacb059ee9a1.html",
       "promptSource": "message"
+    },
+    {
+      "id": "a6c4a00a-52ee-4f70-9f03-ac718f289d4b",
+      "fileName": "broschuere/vorbereitung.html",
+      "version": 3,
+      "label": "Version 3",
+      "createdAt": 1784622758234,
+      "source": "ai",
+      "prompt": "und beim letzten Satz müssen wir einfügen: darf in keiner Richtung eine Neigung haben",
+      "size": 2751,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0003-a6c4a00a-52ee-4f70-9f03-ac718f289d4b.html",
+      "promptSource": "message"
+    },
+    {
+      "id": "653fff3b-26fb-41c1-b82f-35a42af78870",
+      "fileName": "broschuere/vorbereitung.html",
+      "version": 4,
+      "label": "Version 4",
+      "createdAt": 1784623414773,
+      "source": "ai",
+      "prompt": "sind gegen jede Form von Nässe, wie Regen und Stauwasser geschützt",
+      "size": 2859,
+      "mime": "text/html; charset=utf-8",
+      "kind": "html",
+      "contentPath": "0004-653fff3b-26fb-41c1-b82f-35a42af78870.html",
+      "promptSource": "message"
     }
   ]
 }
