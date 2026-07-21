@@ -1,11 +1,11 @@
 {
   "kind": "critique-panel",
-  "score": 5,
+  "score": 4,
   "axes": {
-    "clarity": { "score": 5, "notes": "Gewicht, Hartholzfüße, Nässeschutz und die vollständig waagerechte Fundamentausrichtung sind im zweiten Absatz eindeutig formuliert." },
-    "hierarchy": { "score": 5, "notes": "Die Textänderung bleibt innerhalb des bestehenden Abschnitts Fundament Varianten; Seitenaufbau und Leserichtung bleiben unverändert." },
-    "typography": { "score": 5, "notes": "Die neu exportierte Kundenbroschüre bettet ausschließlich Segoe UI und Segoe UI Semibold ein." },
+    "clarity": { "score": 5, "notes": "Der leere Footer ist weiterhin eindeutig durch dieselbe Holzlinie wie der Header abgegrenzt; nur Broschürenseiten tragen Seitenzahlen." },
+    "hierarchy": { "score": 4, "notes": "Das kompaktere Verhältnis von 28 mm Kopfabschluss zu 24 mm Fußabschluss schafft mehr Raum für den Inhalt und eine ruhigere Seitenbalance." },
+    "typography": { "score": 5, "notes": "Alle neu exportierten PDFs betten ausschließlich Segoe UI, Segoe UI Semibold und bei der Fundamentskizze Segoe UI Bold ein." },
     "motion": { "score": 5, "notes": "Für die statische A4-Druckbroschüre sind keine Bewegungs- oder Interaktionselemente erforderlich." },
-    "brand": { "score": 5, "notes": "Logo, Holzlinie, Kopf- und Fußraster sowie die bestehende Broschürengestaltung bleiben unverändert." }
+    "brand": { "score": 4, "notes": "Das Logo bleibt zentral und unverändert, wird aber um exakt 25 Prozent verkleinert; Farbe und Stärke der Trennlinien bleiben konsistent." }
   }
 }

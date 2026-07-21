@@ -19,7 +19,7 @@ druckbare A4-Datei im Hochformat.
 │   ├── css/
 │   │   └── broschuere.css               Gemeinsame Druckstile und Marken-Tokens
 │   ├── js/
-│   │   └── broschuere.js                Einheitliche Impressum-Fußzeile
+│   │   └── broschuere.js                Seitenzahlen der Broschürenseiten
 │   ├── bilder/                          Bilder der Vorabinformationen
 │   └── fundament-skizzen/
 │       └── premuim.png                   Technische Fundamentgrafik für Oval Sauna Premium
@@ -40,7 +40,7 @@ druckbare A4-Datei im Hochformat.
 - Dunkel `#1C1D2C`, Holz `#ae926c`, einheitlich `Segoe UI` für sämtliche Texte.
 - Alle Stile liegen zentral in `broschuere/css/broschuere.css`. Nichts inline stylen.
 - Die Kopfzeile zeigt links die Einordnung, mittig das Logo und rechts den jeweiligen Abschnitt.
-- Die einheitliche Fußzeile mit Impressum, Bank und Rechtlichem wird zentral aus `broschuere/js/broschuere.js` erzeugt. Jede Seite trägt nur ein leeres `<footer class="doc-foot" data-imprint></footer>` und bindet das Skript ein. Adressen, Bankdaten und rechtliche Angaben nur dort ändern.
+- Der inhaltlich leere Footerbereich ist mit derselben Linie wie der Header abgetrennt. `broschuere/js/broschuere.js` ergänzt ausschließlich auf Broschürenseiten mit `data-page-number` die Seitenzahl; Vorlagen und Beilagen bleiben ohne Seitenzahl.
 
 ## Drucken und PDF-Ausgabe
 
